@@ -15,6 +15,7 @@
 		475D69671FE760A000C0970A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 475D69661FE760A000C0970A /* main.m */; };
 		475D69711FE760A000C0970A /* ZDDTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475D69701FE760A000C0970A /* ZDDTestTests.m */; };
 		475D697C1FE760A000C0970A /* ZDDTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475D697B1FE760A000C0970A /* ZDDTestUITests.m */; };
+		D569247782FE78D3278728AF /* Pods_ZDDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35245B73EC9CD9DD7302FDC /* Pods_ZDDTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		475D69771FE760A000C0970A /* ZDDTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDDTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		475D697B1FE760A000C0970A /* ZDDTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDDTestUITests.m; sourceTree = "<group>"; };
 		475D697D1FE760A000C0970A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988933FE9BBEB5061C95648A /* Pods-ZDDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDDTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDDTest/Pods-ZDDTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F35245B73EC9CD9DD7302FDC /* Pods_ZDDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZDDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F755029B051F5AD7970A9406 /* Pods-ZDDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDDTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDDTest/Pods-ZDDTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D569247782FE78D3278728AF /* Pods_ZDDTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				475D696F1FE760A000C0970A /* ZDDTestTests */,
 				475D697A1FE760A000C0970A /* ZDDTestUITests */,
 				475D69551FE760A000C0970A /* Products */,
+				83473FD318BC367566579A10 /* Pods */,
+				4DB2BCEB63D2617AB7D85932 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = ZDDTestUITests;
 			sourceTree = "<group>";
 		};
+		4DB2BCEB63D2617AB7D85932 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35245B73EC9CD9DD7302FDC /* Pods_ZDDTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83473FD318BC367566579A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				988933FE9BBEB5061C95648A /* Pods-ZDDTest.debug.xcconfig */,
+				F755029B051F5AD7970A9406 /* Pods-ZDDTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 475D69801FE760A000C0970A /* Build configuration list for PBXNativeTarget "ZDDTest" */;
 			buildPhases = (
+				D5750745681FA0B9A9D49638 /* [CP] Check Pods Manifest.lock */,
 				475D69501FE760A000C0970A /* Sources */,
 				475D69511FE760A000C0970A /* Frameworks */,
 				475D69521FE760A000C0970A /* Resources */,
+				18AB6979AB8980C10FFD4BF5 /* [CP] Embed Pods Frameworks */,
+				78898DF58134A1A29BB89689 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18AB6979AB8980C10FFD4BF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZDDTest/Pods-ZDDTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZDDTest/Pods-ZDDTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78898DF58134A1A29BB89689 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZDDTest/Pods-ZDDTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5750745681FA0B9A9D49638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZDDTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		475D69501FE760A000C0970A /* Sources */ = {
@@ -428,11 +509,13 @@
 		};
 		475D69811FE760A000C0970A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988933FE9BBEB5061C95648A /* Pods-ZDDTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67TN37JENE;
 				INFOPLIST_FILE = ZDDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.micomme.breathmachine.ZDDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +525,13 @@
 		};
 		475D69821FE760A000C0970A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F755029B051F5AD7970A9406 /* Pods-ZDDTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67TN37JENE;
 				INFOPLIST_FILE = ZDDTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.micomme.breathmachine.ZDDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
